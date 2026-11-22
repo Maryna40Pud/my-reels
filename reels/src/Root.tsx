@@ -5,10 +5,19 @@ import { FirstThingsScene } from "./breathe/FirstThingsScene";
 import { FirstBreathScene } from "./breathe/FirstBreathScene";
 import { MantraScene } from "./breathe/MantraScene";
 import { InviteScene } from "./breathe/InviteScene";
+import { TalkingReel } from "./talking/TalkingReel";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="TalkingReel"
+        component={TalkingReel}
+        durationInFrames={2136}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
       <Composition
         id="BreatheReel"
         component={BreatheReel}
