@@ -1,90 +1,51 @@
 import { Audio, Video } from "@remotion/media";
 import {
   AbsoluteFill,
-  Easing,
-  Interactive,
+  Img,
   interpolate,
   Sequence,
   staticFile,
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
-import { sans, serif } from "../breathe/fonts";
-import { AccentPill } from "./AccentPill";
-import { accents } from "./accents";
+import { Captions } from "./Captions";
+import { EndCard } from "./EndCard";
+
+const CARD_START = 68; // seconds — after "18 грудня"
 
 export const TalkingReel: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
 
+  const blur = interpolate(frame, [CARD_START * fps, (CARD_START + 1) * fps], [0, 18], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+
   return (
-    <AbsoluteFill style={{ backgroundColor: "black" }}>
-      {/* Original footage (colour untouched). Its audio is replaced by the levelled voice track. */}
-      <Video name="Footage" src={staticFile("source/video.mp4")} muted />
+    <AbsoluteFill style={{ backgroundColor: "#5e2a2f" }}>
+      <AbsoluteFill style={{ filter: `blur(${blur}px)`, scale: String(1 + blur / 300) }}>
+        {/* last frame held after the footage ends, behind the end card */}
+        <Img src={staticFile("source/lastframe.jpg")} style={{ width: "100%", height: "100%" }} />
+        {/* Original footage, colour untouched. Audio replaced by the levelled voice track. */}
+        <Video name="Footage" src={staticFile("source/footage.mp4")} muted style={{ position: "absolute", inset: 0 }} />
+      </AbsoluteFill>
       <Audio name="Voice" src={staticFile("source/voice.m4a")} />
       <Audio
-        name="Music"
-        src={staticFile("music/calm-breath.mp3")}
+        name="Rain"
+        src={staticFile("music/rain-window.mp3")}
         volume={(f) =>
-          interpolate(f, [0, 2 * fps, durationInFrames - 2 * fps, durationInFrames], [0, 0.15, 0.15, 0], {
+          interpolate(f, [0, 1.5 * fps, 70.8 * fps, 72 * fps, durationInFrames - 1], [0, 0.23, 0.23, 0.38, 0.38], {
             extrapolateLeft: "clamp",
             extrapolateRight: "clamp",
           })
         }
       />
 
-      {accents.map((a) => (
-        <Sequence
-          key={a.from}
-          name={a.parts.map((p) => p.text).join(" · ")}
-          from={Math.round(a.from * fps)}
-          durationInFrames={Math.round((a.to - a.from) * fps)}
-          layout="none"
-        >
-          <AccentPill accent={a} />
-        </Sequence>
-      ))}
+      <Captions hideFrom={CARD_START - 0.1} />
 
-      {/* Invitation card for the last seconds */}
-      <Sequence name="Invite" from={65.3 * fps} layout="none">
-        <Interactive.Div
-          name="Invite card"
-          style={{
-            position: "absolute",
-            left: 110,
-            right: 150,
-            bottom: 320,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: 6,
-            padding: "26px 40px 30px",
-            borderRadius: 48,
-            backgroundColor: "rgba(255, 248, 238, 0.88)",
-            boxShadow: "0 18px 50px rgba(80, 50, 30, 0.18)",
-            textAlign: "center",
-            opacity: interpolate(frame, [65.3 * fps, 66 * fps], [0, 1], {
-              extrapolateLeft: "clamp",
-              extrapolateRight: "clamp",
-              easing: Easing.bezier(0.33, 0, 0.2, 1),
-            }),
-            translate: interpolate(frame, [65.3 * fps, 66.2 * fps], ["0px 26px", "0px 0px"], {
-              extrapolateLeft: "clamp",
-              extrapolateRight: "clamp",
-              easing: Easing.bezier(0.33, 0, 0.2, 1),
-            }),
-          }}
-        >
-          <div style={{ fontFamily: sans, fontWeight: 600, fontSize: 34, letterSpacing: 5, textTransform: "uppercase", color: "#8a4330" }}>
-            Ефір-знайомство
-          </div>
-          <div style={{ fontFamily: serif, fontWeight: 600, fontSize: 84, lineHeight: 1.05, color: "#3a2a1f" }}>
-            18 грудня · 19:00
-          </div>
-          <div style={{ fontFamily: sans, fontWeight: 500, fontSize: 36, color: "#3a2a1f" }}>
-            подробиці в описі
-          </div>
-        </Interactive.Div>
+      <Sequence name="End card" from={CARD_START * fps} layout="none">
+        <EndCard />
       </Sequence>
     </AbsoluteFill>
   );
