@@ -32,10 +32,10 @@ export const TalkingReel: React.FC = () => {
       </AbsoluteFill>
       <Audio name="Voice" src={staticFile("source/voice.m4a")} />
       <Audio
-        name="Rain"
-        src={staticFile("music/rain-window.mp3")}
+        name="Music"
+        src={staticFile("music/calm-breath.mp3")}
         volume={(f) =>
-          interpolate(f, [0, 1.5 * fps, 70.8 * fps, 72 * fps, durationInFrames - 1], [0, 0.23, 0.23, 0.38, 0.38], {
+          interpolate(f, [0, 1.5 * fps, 70.8 * fps, 72 * fps, durationInFrames - 1], [0, 0.15, 0.15, 0.22, 0.22], {
             extrapolateLeft: "clamp",
             extrapolateRight: "clamp",
           })
