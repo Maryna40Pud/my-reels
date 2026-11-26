@@ -45,7 +45,18 @@ p{font-size:40px;line-height:1.45;color:var(--soft);font-weight:500}
 .btn{align-self:flex-start;margin-top:48px;padding:30px 52px;border-radius:100px;background:#f6e6d3;color:#3b2c22;font-size:34px;font-weight:600;box-shadow:0 10px 30px rgba(0,0,0,.25)}
 .line{width:120px;height:2px;background:var(--terra);margin:36px 0}
 .dark .line{background:#f0b77c}
-</style></head><body>
+</style>
+<style>
+.focus{list-style:none;margin-top:34px;display:flex;flex-direction:column;gap:26px}
+.focus li{font-size:33px;line-height:1.42;color:var(--soft);font-weight:500;padding-left:40px;position:relative}
+.focus li::before{content:"";position:absolute;left:0;top:16px;width:16px;height:16px;border-radius:50%;border:2px solid var(--terra)}
+.focus b{color:var(--ink);font-weight:600}
+.accent{font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:500;font-size:46px;line-height:1.2;color:var(--terra);margin-top:36px}
+.stat{display:flex;gap:28px;align-items:baseline;padding:22px 0;border-top:1.5px solid rgba(59,44,34,.2)}
+.stat .v{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:64px;color:var(--terra);white-space:nowrap;min-width:230px}
+.stat .t{font-size:32px;line-height:1.4;color:var(--soft);font-weight:500}
+</style>
+</head><body>
 
 <!-- 1 · cabin in snow = alone -->
 <section class="s">
@@ -56,10 +67,10 @@ p{font-size:40px;line-height:1.45;color:var(--soft);font-weight:500}
   <div class="body" style="justify-content:flex-start;padding-top:60px">
     <h1 class="serif">Чому з тривогою і&nbsp;втомою так важко впоратися <em>наодинці?</em></h1>
   </div>
-  <div class="bot"><span>01 / 11</span><span class="arrow">гортай <i></i></span></div>
+  <div class="bot"><span>01 / 14</span><span class="arrow">гортай <i></i></span></div>
 </section>
 
-<!-- 2 · fern, hidden face -->
+<!-- 2 · fern -->
 <section class="s dark">
   <img class="bg" src="photos/fern.jpg" style="object-position:50% 30%">
   <div class="ov" style="background:linear-gradient(180deg,rgba(28,22,14,.72) 0%,rgba(28,22,14,.55) 55%,rgba(28,22,14,.35) 100%)"></div>
@@ -70,21 +81,20 @@ p{font-size:40px;line-height:1.45;color:var(--soft);font-weight:500}
     <div class="line"></div>
     <p>Навіть якщо йдеш до фахівця раз на&nbsp;тиждень, решту часу все одно тримаєш усе&nbsp;сама.</p>
   </div>
-  <div class="bot"><span>02 / 11</span><span class="arrow"><i></i></span></div>
+  <div class="bot"><span>02 / 14</span><span class="arrow"><i></i></span></div>
 </section>
 
-<!-- 3 · golden room -->
+<!-- 3 · why a group -->
 <section class="s dark">
-  <img class="bg" src="photos/golden.jpg" style="object-position:100% 50%">
-  <div class="ov" style="background:linear-gradient(180deg,rgba(38,22,12,.82) 0%,rgba(38,22,12,.6) 50%,rgba(38,22,12,.45) 70%,rgba(38,22,12,.92) 100%),linear-gradient(90deg,rgba(38,22,12,.6),transparent 60%)"></div>
-  <div class="top"><span>Тому ми з колегою створюємо</span><span></span></div>
-  <div class="body" style="justify-content:flex-start;padding-top:70px">
-    <h1 class="serif">Дихай.<br>Відчувай.<br><em>Живи.</em></h1>
-    <p style="margin-top:40px;color:#f6e0c6;font-weight:500">Онлайн-група підтримки, відновлення, самопізнання та&nbsp;розвитку для&nbsp;жінок</p>
+  <img class="bg blur" src="photos/golden.jpg" style="object-position:70% 50%">
+  <div class="ov" style="background:linear-gradient(180deg,rgba(38,22,12,.7),rgba(38,22,12,.55) 60%,rgba(38,22,12,.7))"></div>
+  <div class="top"><span>Чому саме група</span><span></span></div>
+  <div class="body">
+    <h2 class="serif">Групова робота і&nbsp;відновлення в&nbsp;групі мають свої <em>великі плюси</em></h2>
     <div class="line"></div>
-    <p>Не лекції і не «розбір польотів», а&nbsp;живий простір, де працює <b style="color:#f6e0c6;font-weight:600">сила кола</b>.</p>
+    <p>Коли поруч жінки зі схожими цінностями і&nbsp;цілями, з’являється те, чого не дасть жодна книга чи робота наодинці.</p>
   </div>
-  <div class="bot"><span>03 / 11</span><span class="arrow">що дає група <i></i></span></div>
+  <div class="bot"><span>03 / 14</span><span class="arrow">чому це допомагає <i></i></span></div>
 </section>
 
 <!-- 4 · women together -->
@@ -92,43 +102,43 @@ p{font-size:40px;line-height:1.45;color:var(--soft);font-weight:500}
   <img src="photos/women.jpg" style="position:absolute;left:0;top:430px;width:1080px">
   <div class="ov" style="background:linear-gradient(180deg,#ece6df 0%,rgba(236,230,223,.9) 36%,rgba(236,230,223,0) 60%),linear-gradient(0deg,rgba(214,170,130,.16),rgba(214,170,130,.16))"></div>
   <div class="foot"></div>
-  <div class="top"><span>Що дає група</span><span>1 / 4</span></div>
+  <div class="top"><span>Плюси групи</span><span>1 / 4</span></div>
   <div class="body" style="justify-content:flex-start;padding-top:40px">
     <div class="num">01</div>
     <h2 class="serif">Відчуття <em>«я&nbsp;не&nbsp;одна»</em></h2>
     <div class="line" style="margin:28px 0"></div>
     <p style="font-size:37px">Інші жінки стають твоїм живим дзеркалом. Ти&nbsp;слухаєш чужу історію&nbsp;— і&nbsp;раптом знаходиш відповідь на&nbsp;своє питання, яке боліло місяцями.</p>
   </div>
-  <div class="bot"><span>04 / 11</span><span class="arrow"><i></i></span></div>
+  <div class="bot"><span>04 / 14</span><span class="arrow"><i></i></span></div>
 </section>
 
 <!-- 5 · golden park -->
 <section class="s dark">
   <img class="bg" src="photos/park.jpg" style="object-position:50% 60%">
   <div class="ov" style="background:linear-gradient(180deg,rgba(40,24,10,.78) 0%,rgba(40,24,10,.55) 55%,rgba(40,24,10,.35) 80%,rgba(40,24,10,.6) 100%)"></div>
-  <div class="top"><span>Що дає група</span><span>2 / 4</span></div>
+  <div class="top"><span>Плюси групи</span><span>2 / 4</span></div>
   <div class="body" style="justify-content:flex-start;padding-top:60px">
     <div class="num">02</div>
     <h2 class="serif">Спільна <em>енергія</em></h2>
     <div class="line"></div>
     <p>Коли власного ресурсу на нулі, група буквально дає опору. У&nbsp;колі легше дихати, глибше розслабляється тіло, і&nbsp;з’являються сили там, де їх не&nbsp;було.</p>
   </div>
-  <div class="bot"><span>05 / 11</span><span class="arrow"><i></i></span></div>
+  <div class="bot"><span>05 / 14</span><span class="arrow"><i></i></span></div>
 </section>
 
-<!-- 6 · legs up, body -->
+<!-- 6 · legs up -->
 <section class="s" style="background:#dedadf">
   <img src="photos/legs.jpg" style="position:absolute;left:0;top:660px;width:1080px">
   <div class="ov" style="background:linear-gradient(180deg,#ebe4dd 0%,rgba(235,228,221,.92) 45%,rgba(235,228,221,0) 66%),linear-gradient(0deg,rgba(214,170,130,.16),rgba(214,170,130,.16))"></div>
   <div class="foot"></div>
-  <div class="top"><span>Що дає група</span><span>3 / 4</span></div>
+  <div class="top"><span>Плюси групи</span><span>3 / 4</span></div>
   <div class="body" style="justify-content:flex-start;padding-top:40px">
     <div class="num">03</div>
     <h2 class="serif">Дозвіл спробувати <em>нове</em></h2>
     <div class="line" style="margin:28px 0"></div>
     <p style="font-size:37px">Вдома чи на роботі ми звикли бути зручними і стриманими. Тут можна вперше наважитися зазвучати на&nbsp;повний голос, випустити напругу через тіло, проявитися без страху «а&nbsp;що подумають».</p>
   </div>
-  <div class="bot"><span>06 / 11</span><span class="arrow"><i></i></span></div>
+  <div class="bot"><span>06 / 14</span><span class="arrow"><i></i></span></div>
 </section>
 
 <!-- 7 · hands & mug -->
@@ -137,17 +147,49 @@ p{font-size:40px;line-height:1.45;color:var(--soft);font-weight:500}
   <div class="frost" style="height:70%"></div>
   <div class="ov" style="background:linear-gradient(180deg,rgba(247,240,230,.92) 0%,rgba(247,240,230,.86) 50%,rgba(247,240,230,0) 74%)"></div>
   <div class="foot"></div>
-  <div class="top"><span>Що дає група</span><span>4 / 4</span></div>
+  <div class="top"><span>Плюси групи</span><span>4 / 4</span></div>
   <div class="body" style="justify-content:flex-start;padding-top:40px">
     <div class="num">04</div>
     <h2 class="serif">Теплий погляд <em>з&nbsp;боку</em></h2>
     <div class="line" style="margin:28px 0"></div>
     <p style="font-size:37px">Досвід різних жінок&nbsp;— в&nbsp;Україні та в&nbsp;еміграції. Без критики й&nbsp;непроханих порад «як треба». Ми, дві ведучі, бережно стежимо за безпекою кожного слова в&nbsp;просторі.</p>
   </div>
-  <div class="bot"><span>07 / 11</span><span class="arrow"><i></i></span></div>
+  <div class="bot"><span>07 / 14</span><span class="arrow"><i></i></span></div>
 </section>
 
-<!-- 8 · socks on bed -->
+<!-- 8 · the group itself -->
+<section class="s dark">
+  <img class="bg" src="photos/golden.jpg" style="object-position:100% 50%">
+  <div class="ov" style="background:linear-gradient(180deg,rgba(38,22,12,.82) 0%,rgba(38,22,12,.6) 50%,rgba(38,22,12,.45) 70%,rgba(38,22,12,.92) 100%),linear-gradient(90deg,rgba(38,22,12,.6),transparent 60%)"></div>
+  <div class="top"><span>Тому ми з колегою створюємо</span><span></span></div>
+  <div class="body" style="justify-content:flex-start;padding-top:70px">
+    <h1 class="serif">Дихай.<br>Відчувай.<br><em>Живи.</em></h1>
+    <p style="margin-top:40px;color:#f6e0c6;font-weight:500">Онлайн-група підтримки, відновлення, самопізнання та&nbsp;розвитку для&nbsp;жінок</p>
+    <div class="line"></div>
+    <p>Не лекції і не «розбір польотів», а&nbsp;живий простір, де працює <b style="color:#f6e0c6;font-weight:600">сила спільноти</b>.</p>
+  </div>
+  <div class="bot"><span>08 / 14</span><span class="arrow"><i></i></span></div>
+</section>
+
+<!-- 9 · focus -->
+<section class="s">
+  <img class="bg blur" src="photos/cabin.jpg" style="object-position:40% 50%">
+  <div class="ov" style="background:rgba(248,241,232,.84)"></div>
+  <div class="foot"></div>
+  <div class="top"><span>Дихай. Відчувай. Живи</span><span></span></div>
+  <div class="body">
+    <h2 class="serif" style="font-size:76px">На чому тримаємо <em>фокус</em></h2>
+    <ul class="focus">
+      <li><b>На відновленні та розраді</b>&nbsp;— щоб нервова система могла нарешті видихнути, а&nbsp;всередині з’явилося тепло і&nbsp;спокій, яких так бракує у&nbsp;постійній невизначеності.</li>
+      <li><b>На дослідженні себе сьогоднішньої</b>&nbsp;— хто я&nbsp;зараз, де мої опори і&nbsp;де мій ресурс.</li>
+      <li><b>На найближчій зоні руху</b>&nbsp;— без надриву й&nbsp;«успішного успіху», а&nbsp;через пошук того маленького, посильного кроку, який змінює стан уже&nbsp;зараз.</li>
+    </ul>
+    <div class="accent">Це ваша регулярна точка опори та&nbsp;перезавантаження нервової системи.</div>
+  </div>
+  <div class="bot"><span>09 / 14</span><span class="arrow"><i></i></span></div>
+</section>
+
+<!-- 10 · your feelings -->
 <section class="s">
   <img class="bg" src="photos/socks.jpg" style="object-position:50% 100%">
   <div class="frost" style="height:66%"></div>
@@ -160,10 +202,10 @@ p{font-size:40px;line-height:1.45;color:var(--soft);font-weight:500}
     <p>Питання, труднощі, внутрішні конфлікти, страхи, сумніви, стосунки та життєві ситуації&nbsp;— те, що хвилює тут і&nbsp;зараз.</p>
     <p style="margin-top:24px;color:var(--ink);font-weight:600">Те, що болить, турбує або потребує розуміння,&nbsp;— стає темою нашої спільної роботи.</p>
   </div>
-  <div class="bot"><span>08 / 11</span><span class="arrow"><i></i></span></div>
+  <div class="bot"><span>10 / 14</span><span class="arrow"><i></i></span></div>
 </section>
 
-<!-- 9 · methods on frosted candles -->
+<!-- 11 · methods -->
 <section class="s">
   <img class="bg blur" src="photos/candles.jpg" style="object-position:50% 50%">
   <div class="ov" style="background:rgba(80,50,30,.15)"></div>
@@ -182,10 +224,10 @@ p{font-size:40px;line-height:1.45;color:var(--soft);font-weight:500}
       </ul>
     </div>
   </div>
-  <div class="bot"><span>09 / 11</span><span class="arrow"><i></i></span></div>
+  <div class="bot"><span>11 / 14</span><span class="arrow"><i></i></span></div>
 </section>
 
-<!-- 10 · format on frosted mug -->
+<!-- 12 · format -->
 <section class="s">
   <img class="bg blur" src="photos/mug.jpg" style="object-position:50% 60%">
   <div class="ov" style="background:rgba(80,50,30,.12)"></div>
@@ -196,17 +238,37 @@ p{font-size:40px;line-height:1.45;color:var(--soft);font-weight:500}
       <h2 class="serif" style="font-size:76px">Формат <em>групи</em></h2>
       <ul class="list">
         <li><b>Зустрічі</b><span>2 рази на місяць</span></li>
-        <li><b>Тривалість</b><span>2,5–3 години</span></li>
+        <li><b>Тривалість</b><span>до 3 годин</span></li>
         <li><b>Де</b><span>онлайн, Zoom</span></li>
-        <li><b>Одна зустріч</b><span class="price">1 500 грн</span></li>
-        <li><b>Місяць</b><span class="price">3 000 грн / 60 €</span></li>
+        <li><b>Ведучі</b><span>дві фахівчині</span></li>
       </ul>
     </div>
   </div>
-  <div class="bot"><span>10 / 11</span><span class="arrow"><i></i></span></div>
+  <div class="bot"><span>12 / 14</span><span class="arrow"><i></i></span></div>
 </section>
 
-<!-- 11 · candles CTA -->
+<!-- 13 · price -->
+<section class="s">
+  <img class="bg blur" src="photos/socks.jpg" style="object-position:50% 70%">
+  <div class="ov" style="background:rgba(120,80,50,.18)"></div>
+  <div class="foot"></div>
+  <div class="top" style="color:#fbf3e8;text-shadow:0 1px 8px rgba(40,20,10,.5)"><span>Вартість</span><span></span></div>
+  <div class="body">
+    <div class="card">
+      <h2 class="serif" style="font-size:76px">Скільки це <em>коштує?</em></h2>
+      <div style="margin:30px 0 34px">
+        <div class="serif" style="font-size:110px;color:var(--terra);line-height:1">1 500 грн</div>
+        <p style="font-size:34px;margin-top:10px;color:var(--ink)">за 3-годинну зустріч</p>
+        <p style="font-size:32px">або 60&nbsp;€ / 3&nbsp;000&nbsp;грн на місяць</p>
+      </div>
+      <div class="stat"><div class="v">~500 грн</div><div class="t">за годину роботи з&nbsp;двома фахівцями</div></div>
+      <div class="stat"><div class="v">6 годин</div><div class="t">на місяць&nbsp;— регулярної точки опори та&nbsp;перезавантаження нервової системи</div></div>
+    </div>
+  </div>
+  <div class="bot"><span>13 / 14</span><span class="arrow"><i></i></span></div>
+</section>
+
+<!-- 14 · CTA -->
 <section class="s dark">
   <img class="bg" src="photos/candles.jpg" style="object-position:50% 45%">
   <div class="ov" style="background:linear-gradient(100deg,rgba(36,22,12,.88) 0%,rgba(36,22,12,.7) 50%,rgba(36,22,12,.2) 100%),linear-gradient(0deg,rgba(36,22,12,.5),transparent 30%)"></div>
@@ -214,9 +276,9 @@ p{font-size:40px;line-height:1.45;color:var(--soft);font-weight:500}
   <div class="body">
     <h2 class="serif">Відкритий ефір <em>знайомства</em></h2>
     <div class="date"><div class="d">18</div><div class="m">грудня<br>19:00 за Києвом<br>Zoom</div></div>
-    <p>Приходь, щоб відчути енергію кола на&nbsp;собі.</p>
+    <p>Приходь, щоб відчути цю енергію на&nbsp;собі.</p>
     <div class="btn">Напиши «КОЛО» в дірект</div>
   </div>
-  <div class="bot"><span>11 / 11</span><span>збережи, щоб не загубити</span></div>
+  <div class="bot"><span>14 / 14</span><span>збережи, щоб не загубити</span></div>
 </section>
 </body></html>
