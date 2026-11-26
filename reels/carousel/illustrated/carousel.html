@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="uk"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600&display=swap&subset=cyrillic" rel="stylesheet">
+<style>
+:root{--ink:#3b2c22;--soft:#6b5444;--terra:#a5583e;--milk:#f7f0e6}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#ccc;font-family:Manrope,sans-serif;color:var(--ink)}
+.s{width:1080px;height:1350px;position:relative;overflow:hidden;margin-bottom:20px;
+  background:linear-gradient(172deg,#f8f1e7 0%,#f0e1cd 50%,#e6cdb3 100%);
+  padding:120px 104px 110px;display:flex;flex-direction:column}
+.s.dark{background:linear-gradient(165deg,#6a4a3a 0%,#4a3428 55%,#33241a 100%);color:var(--milk)}
+.glow{position:absolute;width:1200px;height:1200px;border-radius:50%;transform:translate(-50%,-50%);
+  background:radial-gradient(circle,rgba(255,236,205,.8) 0%,rgba(255,240,220,.3) 40%,rgba(255,245,232,0) 68%)}
+.dark .glow{background:radial-gradient(circle,rgba(240,170,100,.28) 0%,rgba(224,168,110,0) 62%)}
+.layer{position:absolute;inset:0;pointer-events:none}
+.top,.body,.bot{position:relative;z-index:5}
+.top{display:flex;justify-content:space-between;font-size:26px;letter-spacing:.18em;text-transform:uppercase;color:var(--soft);font-weight:500}
+.dark .top{color:#dcb79c}
+.body{flex:1;display:flex;flex-direction:column;justify-content:center}
+.serif{font-family:"Cormorant Garamond",serif;font-weight:600;line-height:1.08;letter-spacing:-.01em}
+h1{font-size:104px} h2{font-size:84px}
+em{font-style:italic;font-weight:500;color:var(--terra)}
+.dark em{color:#e0a86e}
+p{font-size:40px;line-height:1.45;color:var(--soft)}
+.dark p{color:#efdfca}
+.num{font-family:"Cormorant Garamond",serif;font-size:170px;line-height:1;color:var(--terra);font-weight:500;font-style:italic;opacity:.85;margin-bottom:18px}
+.bot{display:flex;justify-content:space-between;align-items:center;font-size:28px;font-weight:500;color:#fbf3e8;text-shadow:0 1px 6px rgba(60,30,15,.45)}
+.arrow{display:flex;align-items:center;gap:18px}
+.arrow i{display:block;width:90px;height:2px;background:currentColor;position:relative}
+.arrow i::after{content:"";position:absolute;right:0;top:-8px;width:16px;height:16px;border-top:2px solid currentColor;border-right:2px solid currentColor;transform:rotate(45deg)}
+.list{list-style:none;margin-top:44px}
+.list li{display:flex;justify-content:space-between;align-items:baseline;gap:30px;padding:26px 0;border-top:1.5px solid rgba(59,44,34,.2);font-size:38px}
+.list li:last-child{border-bottom:1.5px solid rgba(59,44,34,.2)}
+.list b{font-weight:600} .list span{color:var(--soft);text-align:right}
+.price{font-family:"Cormorant Garamond",serif;font-size:60px;font-weight:600;color:var(--terra)}
+.methods{list-style:none;margin-top:44px;display:flex;flex-direction:column;gap:22px}
+.methods li{font-size:40px;line-height:1.3;display:flex;gap:26px;align-items:baseline}
+.methods li::before{content:"";flex:none;width:18px;height:18px;border-radius:50%;border:2px solid var(--terra);transform:translateY(-4px)}
+.date{display:flex;gap:40px;align-items:center;margin:48px 0 40px}
+.date .d{font-family:"Cormorant Garamond",serif;font-size:220px;line-height:.85;color:#e0a86e;font-weight:500}
+.date .m{font-size:40px;line-height:1.4;color:#f1dcc6}
+.btn{align-self:flex-start;margin-top:48px;padding:30px 52px;border-radius:100px;background:#f1dcc6;color:#3b2c22;font-size:34px;font-weight:600}
+.line{width:120px;height:2px;background:var(--terra);margin:40px 0}
+.dark .line{background:#e0a86e}
+.pb{padding-bottom:210px}
+</style></head><body>
+
+<!-- 1 -->
+<section class="s" data-snow="40" data-blanket data-mug="830">
+  <div class="glow" style="left:72%;top:28%"></div>
+  <div class="layer" data-window="640,175,330,400"></div>
+  <div class="top"><span>Дихай. Відчувай. Живи</span><span>простір для жінок</span></div>
+  <div class="body pb" style="justify-content:flex-end;padding-bottom:290px">
+    <h1 class="serif">Чому з тривогою і&nbsp;втомою так важко впоратися <em>наодинці?</em></h1>
+  </div>
+  <div class="bot"><span>01 / 11</span><span class="arrow">гортай <i></i></span></div>
+</section>
+
+<!-- 2 -->
+<section class="s" data-snow="60" data-blanket data-candle="820">
+  <div class="glow" style="left:25%;top:45%"></div>
+  <div class="top"><span>Замкнене коло</span><span></span></div>
+  <div class="body pb">
+    <h2 class="serif">Бо коли ти одна&nbsp;— ти варишся у&nbsp;власних думках, як <em>у&nbsp;замкненому колі.</em></h2>
+    <div class="line"></div>
+    <p>Навіть якщо йдеш до фахівця раз на&nbsp;тиждень, решту часу все одно тримаєш усе&nbsp;сама.</p>
+  </div>
+  <div class="bot"><span>02 / 11</span><span class="arrow"><i></i></span></div>
+</section>
+
+<!-- 3 -->
+<section class="s dark" data-snow="50" data-circle>
+  <div class="glow" style="left:50%;top:92%"></div>
+  <div class="top"><span>Тому ми з колегою створюємо</span><span></span></div>
+  <div class="body" style="justify-content:flex-start;padding-top:70px">
+    <h1 class="serif">Дихай.<br>Відчувай.<br><em>Живи.</em></h1>
+    <p style="margin-top:40px;color:#f1dcc6;font-weight:500">Онлайн-група підтримки, відновлення, самопізнання та&nbsp;розвитку для&nbsp;жінок</p>
+    <div class="line"></div>
+    <p>Не лекції і не «розбір польотів», а&nbsp;живий простір, де працює <b style="color:#f1dcc6;font-weight:600">сила кола</b>.</p>
+  </div>
+  <div class="bot"><span>03 / 11</span><span class="arrow">що дає група <i></i></span></div>
+</section>
+
+<!-- 4 -->
+<section class="s" data-snow="45" data-blanket data-mug="780">
+  <div class="glow" style="left:75%;top:30%"></div>
+  <div class="top"><span>Що дає група</span><span>1 / 4</span></div>
+  <div class="body pb">
+    <div class="num">01</div>
+    <h2 class="serif">Відчуття <em>«я&nbsp;не&nbsp;одна»</em></h2>
+    <div class="line"></div>
+    <p>Інші жінки стають твоїм живим дзеркалом. Ти&nbsp;слухаєш чужу історію&nbsp;— і&nbsp;раптом знаходиш відповідь на&nbsp;своє питання, яке боліло місяцями.</p>
+  </div>
+  <div class="bot"><span>04 / 11</span><span class="arrow"><i></i></span></div>
+</section>
+
+<!-- 5 -->
+<section class="s" data-snow="45" data-blanket data-candle="160">
+  <div class="glow" style="left:25%;top:32%"></div>
+  <div class="top"><span>Що дає група</span><span>2 / 4</span></div>
+  <div class="body pb">
+    <div class="num">02</div>
+    <h2 class="serif">Спільна <em>енергія</em></h2>
+    <div class="line"></div>
+    <p>Коли власного ресурсу на нулі, група буквально дає опору. У&nbsp;колі легше дихати, глибше розслабляється тіло, і&nbsp;з’являються сили там, де їх не&nbsp;було.</p>
+  </div>
+  <div class="bot"><span>05 / 11</span><span class="arrow"><i></i></span></div>
+</section>
+
+<!-- 6 -->
+<section class="s" data-snow="45" data-blanket data-mug="800">
+  <div class="glow" style="left:75%;top:30%"></div>
+  <div class="top"><span>Що дає група</span><span>3 / 4</span></div>
+  <div class="body pb">
+    <div class="num">03</div>
+    <h2 class="serif">Дозвіл спробувати <em>нове</em></h2>
+    <div class="line"></div>
+    <p>Вдома чи на роботі ми звикли бути зручними і стриманими. Тут можна вперше наважитися зазвучати на&nbsp;повний голос, випустити напругу через тіло, проявитися без страху «а&nbsp;що подумають».</p>
+  </div>
+  <div class="bot"><span>06 / 11</span><span class="arrow"><i></i></span></div>
+</section>
+
+<!-- 7 -->
+<section class="s" data-snow="45" data-blanket data-mugs="700">
+  <div class="glow" style="left:25%;top:32%"></div>
+  <div class="top"><span>Що дає група</span><span>4 / 4</span></div>
+  <div class="body pb">
+    <div class="num">04</div>
+    <h2 class="serif">Теплий погляд <em>з&nbsp;боку</em></h2>
+    <div class="line"></div>
+    <p>Досвід різних жінок&nbsp;— в&nbsp;Україні та в&nbsp;еміграції. Без критики й&nbsp;непроханих порад «як треба». Ми, дві ведучі, бережно стежимо за безпекою кожного слова в&nbsp;просторі.</p>
+  </div>
+  <div class="bot"><span>07 / 11</span><span class="arrow"><i></i></span></div>
+</section>
+
+<!-- 8 -->
+<section class="s" data-snow="45" data-blanket data-candle="880">
+  <div class="glow" style="left:70%;top:30%"></div>
+  <div class="top"><span>Як ми працюємо</span><span></span></div>
+  <div class="body pb">
+    <h2 class="serif" style="font-size:76px">Саме <em>ви і ваші почуття</em> формують зміст наших зустрічей</h2>
+    <div class="line"></div>
+    <p>Питання, труднощі, внутрішні конфлікти, страхи, сумніви, стосунки та життєві ситуації&nbsp;— те, що хвилює тут і&nbsp;зараз.</p>
+    <p style="margin-top:28px;color:var(--ink);font-weight:500">Те, що болить, турбує або потребує розуміння,&nbsp;— стає темою нашої спільної роботи.</p>
+  </div>
+  <div class="bot"><span>08 / 11</span><span class="arrow"><i></i></span></div>
+</section>
+
+<!-- 9 -->
+<section class="s" data-snow="45" data-blanket data-mug="810">
+  <div class="glow" style="left:30%;top:30%"></div>
+  <div class="top"><span>Як ми працюємо</span><span></span></div>
+  <div class="body pb">
+    <h2 class="serif">На вас <em>чекають</em></h2>
+    <ul class="methods">
+      <li>групова робота</li>
+      <li>психологічні сесії</li>
+      <li>розстановки</li>
+      <li>арт-терапія</li>
+      <li>метафоричні асоціативні карти</li>
+      <li>тілесні вправи та робота з&nbsp;тілом</li>
+    </ul>
+  </div>
+  <div class="bot"><span>09 / 11</span><span class="arrow"><i></i></span></div>
+</section>
+
+<!-- 10 -->
+<section class="s" data-snow="40" data-blanket>
+  <div class="glow" style="left:50%;top:20%"></div>
+  <div class="top"><span>Як усе влаштовано</span><span></span></div>
+  <div class="body pb">
+    <h2 class="serif">Формат <em>групи</em></h2>
+    <ul class="list">
+      <li><b>Зустрічі</b><span>2 рази на місяць</span></li>
+      <li><b>Тривалість</b><span>2,5–3 години</span></li>
+      <li><b>Де</b><span>онлайн, Zoom</span></li>
+      <li><b>Одна зустріч</b><span class="price">1 500 грн</span></li>
+      <li><b>Місяць</b><span class="price">3 000 грн / 60 €</span></li>
+    </ul>
+  </div>
+  <div class="bot"><span>10 / 11</span><span class="arrow"><i></i></span></div>
+</section>
+
+<!-- 11 -->
+<section class="s dark" data-snow="70" data-blanket="dark" data-mugs="640">
+  <div class="glow" style="left:70%;top:30%"></div>
+  <div class="top"><span>Дихай. Відчувай. Живи</span><span>запрошення</span></div>
+  <div class="body pb">
+    <h2 class="serif">Відкритий ефір <em>знайомства</em></h2>
+    <div class="date"><div class="d">18</div><div class="m">грудня<br>19:00 за Києвом<br>Zoom</div></div>
+    <p>Приходь, щоб відчути енергію кола на&nbsp;собі.</p>
+    <div class="btn">Напиши «КОЛО» в дірект</div>
+  </div>
+  <div class="bot"><span>11 / 11</span><span>збережи, щоб не загубити</span></div>
+</section>
+
+<script>
+let seed=7;const rnd=()=>{seed=(seed*16807)%2147483647;return (seed-1)/2147483646};
+const W=1080,H=1350,BT=1110; // blanket top
+const NS='http://www.w3.org/2000/svg';
+function svg(inner,z=1){const d=document.createElement('div');d.className='layer';d.style.zIndex=z;
+  d.innerHTML=`<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" xmlns="${NS}">${inner}</svg>`;return d}
+
+function snow(n,dark){let o='';for(let i=0;i<n;i++){const r=2+rnd()*5,x=rnd()*W,y=rnd()*H*.85,a=dark?.25+rnd()*.35:.55+rnd()*.4;
+  o+=`<circle cx="${x}" cy="${y}" r="${r}" fill="${dark?'#fff3e4':'#fffaf3'}" opacity="${a}" filter="url(#bl)"/>`}
+  return `<defs><filter id="bl"><feGaussianBlur stdDeviation="1.4"/></filter></defs>${o}`}
+
+function blanket(dark){
+  const base=dark?'#7a4a36':'#c98a68', st=dark?'#8d5842':'#d89c79', sh=dark?'#5a3526':'#a96b4c';
+  return `<defs>
+   <pattern id="knit" width="44" height="40" patternUnits="userSpaceOnUse">
+     <rect width="44" height="40" fill="${base}"/>
+     <ellipse cx="13" cy="20" rx="8" ry="17" transform="rotate(-24 13 20)" fill="${st}"/>
+     <ellipse cx="31" cy="20" rx="8" ry="17" transform="rotate(24 31 20)" fill="${st}"/>
+     <ellipse cx="13" cy="22" rx="3" ry="11" transform="rotate(-24 13 22)" fill="${sh}" opacity=".35"/>
+     <ellipse cx="31" cy="22" rx="3" ry="11" transform="rotate(24 31 22)" fill="${sh}" opacity=".35"/>
+   </pattern>
+   <linearGradient id="fold" x1="0" y1="0" x2="0" y2="1">
+     <stop offset="0" stop-color="#fff2e0" stop-opacity=".28"/><stop offset=".25" stop-color="#000" stop-opacity="0"/>
+     <stop offset="1" stop-color="#2a160c" stop-opacity=".35"/></linearGradient>
+   <linearGradient id="foldx" x1="0" x2="1">
+     <stop offset="0" stop-color="#2a160c" stop-opacity=".18"/><stop offset=".3" stop-color="#000" stop-opacity="0"/>
+     <stop offset=".55" stop-color="#2a160c" stop-opacity=".16"/><stop offset=".8" stop-color="#000" stop-opacity="0"/>
+     <stop offset="1" stop-color="#2a160c" stop-opacity=".2"/></linearGradient>
+  </defs>
+  <path id="bp" d="M0 ${BT+20} C 180 ${BT-30}, 330 ${BT+40}, 540 ${BT} S 900 ${BT-40}, 1080 ${BT+10} L1080 1350 L0 1350Z" fill="url(#knit)"/>
+  <path d="M0 ${BT+20} C 180 ${BT-30}, 330 ${BT+40}, 540 ${BT} S 900 ${BT-40}, 1080 ${BT+10} L1080 1350 L0 1350Z" fill="url(#fold)"/>
+  <path d="M0 ${BT+20} C 180 ${BT-30}, 330 ${BT+40}, 540 ${BT} S 900 ${BT-40}, 1080 ${BT+10} L1080 1350 L0 1350Z" fill="url(#foldx)"/>
+  <path d="M0 ${BT+20} C 180 ${BT-30}, 330 ${BT+40}, 540 ${BT} S 900 ${BT-40}, 1080 ${BT+10}" fill="none" stroke="${dark?'#9a6650':'#e6b08f'}" stroke-width="10" stroke-linecap="round" opacity=".8"/>
+  <path d="M0 ${BT+12} C 180 ${BT-38}, 330 ${BT+32}, 540 ${BT-8} S 900 ${BT-48}, 1080 ${BT+2} L1080 ${BT-60} L0 ${BT-60}Z" fill="none"/>
+  <ellipse cx="540" cy="${BT-6}" rx="560" ry="22" fill="#3b2010" opacity=".10" filter="url(#bl)"/>`}
+
+function steam(x,y){return `<g fill="none" stroke="#fffaf2" stroke-width="5" stroke-linecap="round" opacity=".7">
+  <path d="M${x-22} ${y} c -18 -30, 18 -50, 0 -85 s 14 -50, 0 -70"/>
+  <path d="M${x+18} ${y-10} c -16 -26, 16 -44, 0 -74 s 12 -40, 0 -58" opacity=".7"/></g>`}
+
+function mug(x,color='#efe3d2',band='#a5583e',scale=1){const y=BT-150*scale;
+  return `<g transform="translate(${x} ${y}) scale(${scale})">
+   <ellipse cx="80" cy="168" rx="110" ry="18" fill="#3b2010" opacity=".22"/>
+   <path d="M150 50 c 55 0, 55 80, 0 80" fill="none" stroke="${color}" stroke-width="20"/>
+   <path d="M150 50 c 55 0, 55 80, 0 80" fill="none" stroke="#000" stroke-opacity=".08" stroke-width="20"/>
+   <path d="M0 20 L160 20 L150 150 Q148 168 128 168 L32 168 Q12 168 10 150 Z" fill="${color}"/>
+   <path d="M0 20 L160 20 L150 150 Q148 168 128 168 L100 168 L118 20Z" fill="#000" opacity=".07"/>
+   <rect x="4" y="70" width="152" height="22" fill="${band}" opacity=".85"/>
+   <ellipse cx="80" cy="20" rx="80" ry="14" fill="#f7efe4"/>
+   <ellipse cx="80" cy="22" rx="70" ry="10" fill="#6a3c24"/>
+   <ellipse cx="72" cy="20" rx="30" ry="4" fill="#9a6040" opacity=".7"/>
+   ${steam(80,-6)}</g>`}
+
+function candle(x){const y=BT-190;return `<g transform="translate(${x} ${y})">
+   <circle cx="50" cy="0" r="120" fill="url(#cg)"/>
+   <defs><radialGradient id="cg"><stop offset="0" stop-color="#ffd38a" stop-opacity=".7"/><stop offset="1" stop-color="#ffd38a" stop-opacity="0"/></radialGradient></defs>
+   <ellipse cx="50" cy="196" rx="90" ry="14" fill="#3b2010" opacity=".22"/>
+   <path d="M0 40 L100 40 L100 190 Q50 200 0 190Z" fill="#f6ead8"/>
+   <path d="M70 40 L100 40 L100 190 Q85 194 70 194Z" fill="#000" opacity=".06"/>
+   <ellipse cx="50" cy="40" rx="50" ry="10" fill="#fff6ea"/>
+   <rect x="47" y="14" width="5" height="24" fill="#4a3428"/>
+   <path d="M50 -38 C 66 -12, 64 10, 50 16 C 36 10, 34 -12, 50 -38Z" fill="#ffb347"/>
+   <path d="M50 -18 C 58 -4, 57 8, 50 12 C 43 8, 42 -4, 50 -18Z" fill="#fff0c0"/></g>`}
+
+function windowEl(x,y,w,h,dark){const r=w/2,fr=dark?'#c9a68c':'#fbf4ea';
+  let flakes='';for(let i=0;i<70;i++)flakes+=`<circle cx="${x+rnd()*w}" cy="${y+rnd()*h}" r="${1.5+rnd()*3.5}" fill="#fff" opacity="${.5+rnd()*.5}"/>`;
+  const arch=`M${x} ${y+h} L${x} ${y+r} A${r} ${r} 0 0 1 ${x+w} ${y+r} L${x+w} ${y+h}Z`;
+  return `<defs>
+   <linearGradient id="sky${x}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${dark?'#41505e':'#9fb2c2'}"/><stop offset="1" stop-color="${dark?'#7c8b96':'#e3e7ea'}"/></linearGradient>
+   <clipPath id="cl${x}"><path d="${arch}"/></clipPath></defs>
+   <ellipse cx="${x+w/2}" cy="${y+h/2}" rx="${w*.9}" ry="${h*.75}" fill="${dark?'#000':'#7a5a40'}" opacity=".08" filter="url(#bl)"/>
+   <g clip-path="url(#cl${x})">
+    <rect x="${x}" y="${y}" width="${w}" height="${h}" fill="url(#sky${x})"/>
+    <path d="M${x} ${y+h*.72} C ${x+w*.3} ${y+h*.62}, ${x+w*.6} ${y+h*.78}, ${x+w} ${y+h*.66} L${x+w} ${y+h} L${x} ${y+h}Z" fill="#f4f6f7"/>
+    <g fill="${dark?'#2e3a42':'#6f8290'}" opacity=".6">
+      <path d="M${x+w*.22} ${y+h*.70} l -34 0 l 34 -110 l 34 110z"/><path d="M${x+w*.36} ${y+h*.67} l -26 0 l 26 -80 l 26 80z"/>
+      <path d="M${x+w*.78} ${y+h*.68} l -40 0 l 40 -130 l 40 130z"/></g>
+    ${flakes}
+   </g>
+   <path d="${arch}" fill="none" stroke="${fr}" stroke-width="22"/>
+   <line x1="${x+w/2}" y1="${y}" x2="${x+w/2}" y2="${y+h}" stroke="${fr}" stroke-width="14"/>
+   <line x1="${x}" y1="${y+h*.5}" x2="${x+w}" y2="${y+h*.5}" stroke="${fr}" stroke-width="14"/>
+   <rect x="${x-30}" y="${y+h-6}" width="${w+60}" height="26" rx="6" fill="${fr}"/>
+   <path d="M${x-26} ${y+h-6} q ${w*.25} -22 ${w*.5} -6 t ${w*.5+52} 0 Z" fill="#ffffff"/>`}
+
+function circleOfWomen(){
+  const cols=['#c98a68','#8a8a5c','#d9a77e','#b0573b','#9c6b5a','#e0b58f','#7d5a4a'];
+  const hair=['#3b2418','#6a4028','#2b1b12','#8a5a36','#4a2e20','#5c3a28','#2e1f17'];
+  let o=`<defs><radialGradient id="fire"><stop offset="0" stop-color="#ffd38a" stop-opacity=".9"/><stop offset="1" stop-color="#ffb060" stop-opacity="0"/></radialGradient></defs>
+  <ellipse cx="540" cy="1215" rx="420" ry="140" fill="url(#fire)" opacity=".55"/>`;
+  // back row (smaller, facing us, softly lit)
+  const back=[[300,1080],[440,1050],[640,1050],[780,1080]];
+  back.forEach(([x,y],i)=>{o+=`<g opacity=".92"><path d="M${x-62} ${y+150} C ${x-60} ${y+70}, ${x+60} ${y+70}, ${x+62} ${y+150} Z" fill="${cols[i+2]}"/>
+    <ellipse cx="${x}" cy="${y+40}" rx="30" ry="36" fill="#e9c3a2"/>
+    <path d="M${x-34} ${y+44} C ${x-40} ${y-6}, ${x+40} ${y-6}, ${x+34} ${y+44} C ${x+26} ${y+16}, ${x-26} ${y+16}, ${x-34} ${y+44}Z" fill="${hair[i]}"/></g>`});
+  // candle in the middle
+  o+=`<g transform="translate(515 1150) scale(.55)"><path d="M0 40 L90 40 L90 150 Q45 158 0 150Z" fill="#f6ead8"/><ellipse cx="45" cy="40" rx="45" ry="9" fill="#fff6ea"/>
+     <path d="M45 -30 C 60 -6, 58 12, 45 18 C 32 12, 30 -6, 45 -30Z" fill="#ffb347"/><path d="M45 -10 C 52 2, 51 12, 45 15 C 39 12, 38 2, 45 -10Z" fill="#fff0c0"/></g>`;
+  // front row: backs of women, wrapped in blankets
+  const front=[[150,1200,1.15],[400,1235,1.2],[680,1235,1.2],[930,1200,1.15]];
+  front.forEach(([x,y,s],i)=>{o+=`<g transform="translate(${x} ${y}) scale(${s})">
+    <path d="M-120 160 C -118 40, -70 10, 0 10 C 70 10, 118 40, 120 160Z" fill="${cols[i]}"/>
+    <path d="M-120 160 C -118 40, -70 10, 0 10 C 70 10, 118 40, 120 160Z" fill="url(#knit)" opacity=".18"/>
+    <path d="M-60 30 C -30 18, 30 18, 60 30" stroke="#000" stroke-opacity=".12" stroke-width="10" fill="none"/>
+    <ellipse cx="0" cy="-30" rx="44" ry="50" fill="${hair[i+3]}"/>
+    <path d="M-30 -10 C -40 30, -20 40, 0 44 C 20 40, 40 30, 30 -10Z" fill="${hair[i+3]}"/>
+    <ellipse cx="-12" cy="-52" rx="16" ry="10" fill="#fff" opacity=".07"/></g>`});
+  return blanketDefsOnly()+o}
+function blanketDefsOnly(){return `<defs><pattern id="knit" width="44" height="40" patternUnits="userSpaceOnUse">
+  <rect width="44" height="40" fill="#000" opacity="0"/><ellipse cx="13" cy="20" rx="8" ry="17" transform="rotate(-24 13 20)" fill="#fff"/>
+  <ellipse cx="31" cy="20" rx="8" ry="17" transform="rotate(24 31 20)" fill="#fff"/></pattern></defs>`}
+
+document.querySelectorAll('section.s').forEach(s=>{
+  const dark=s.classList.contains('dark'), d=s.dataset;
+  const top=s.querySelector('.top');
+  const ins=(el)=>s.insertBefore(el,top);
+  const w=s.querySelector('[data-window]');
+  if(w){const a=w.dataset.window.split(',');w.replaceWith(svg(windowEl(+a[0],+a[1],+a[2],+a[3],a[4]==='dark'),1))}
+  if(d.snow) ins(svg(snow(+d.snow,dark),2));
+  if(d.circle!==undefined) ins(svg(circleOfWomen(),3));
+  if(d.blanket!==undefined){
+    let items='';
+    if(d.mug) items+=mug(+d.mug);
+    if(d.mugs) items+=mug(+d.mugs,'#efe3d2','#a5583e',.9)+mug(+d.mugs+190,'#c9d0c4','#5f6140',.82);
+    if(d.candle) items+=candle(+d.candle);
+    ins(svg(blanket(d.blanket==='dark')+items,3));
+  }
+});
+</script>
+</body></html>
